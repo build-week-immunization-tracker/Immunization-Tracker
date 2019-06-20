@@ -40,3 +40,15 @@ body {
   font-size: 62.5%;
   box-sizing: border-box;
 }
+section {
+  max-width: 1000px;
+}
+section .section1 {
+  max-width: 450px;
+}
+section .section2 {
+  max-width: 450px;
+}
+img {
+  max-width: 450px;
+}
