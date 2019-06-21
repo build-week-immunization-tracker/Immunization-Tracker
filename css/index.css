@@ -5,7 +5,10 @@
   justify-content: space-between;
 }
 .main-content .section1 {
-  max-width: 450px;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 3%;
 }
 .main-content .section1 h2 {
   font-size: 2rem;
@@ -13,10 +16,18 @@
 .main-content .section1 p {
   font-size: 1.5rem;
 }
-.main-content .section2 {
+.main-content .section1 .img-container {
   max-width: 450px;
+}
+.main-content .section1 .img-container img {
+  width: 100%;
+  border-radius: 10px;
+}
+.main-content .section2 {
+  width: 45%;
   display: flex;
   flex-direction: column-reverse;
+  margin: 0 3%;
 }
 .main-content .section2 h2 {
   font-size: 2rem;
@@ -24,19 +35,32 @@
 .main-content .section2 p {
   font-size: 1.5rem;
 }
-.main-content .section2 .img {
+.main-content .section2 .img-container {
   max-width: 450px;
 }
-.main-content .section2 .img img {
+.main-content .section2 .img-container img {
   width: 100%;
+  border-radius: 10px;
 }
-.credit {
+.footer-container {
+  width: 100%;
   display: flex;
   justify-content: center;
-  font-size: 1.3rem;
+  background: #d8d5db;
+  padding-top: 2rem;
 }
-img {
-  max-width: 450px;
+.footer-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.footer-container .credit-button {
+  max-width: 50px;
+  align-self: center;
+}
+.footer-container .credit {
+  display: none;
 }
 .navigation {
   margin: 0;
