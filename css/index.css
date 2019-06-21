@@ -1,17 +1,18 @@
 .banner {
   display: flex;
   max-width: 1000px;
-  margin: 2rem auto 2rem 15rem;
+  margin: 2rem auto;
   justify-content: center;
 }
 .banner .hospital {
   width: 95%;
   height: 50%;
+  border-radius: 10px;
 }
 .main-content {
   max-width: 1000px;
   display: flex;
-  margin: 0 auto 0 15rem;
+  margin: 0 auto;
   justify-content: space-between;
 }
 .main-content .section1 {
