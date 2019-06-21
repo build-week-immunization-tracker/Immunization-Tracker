@@ -42,13 +42,25 @@
   width: 100%;
   border-radius: 10px;
 }
-.credit {
+.footer-container {
+  width: 100%;
   display: flex;
   justify-content: center;
-  font-size: 1.3rem;
+  background: #d8d5db;
+  padding-top: 2rem;
 }
-img {
-  max-width: 450px;
+.footer-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.footer-container .credit-button {
+  max-width: 50px;
+  align-self: center;
+}
+.footer-container .credit {
+  display: none;
 }
 .navigation {
   margin: 0;
