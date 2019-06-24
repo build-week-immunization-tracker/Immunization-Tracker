@@ -16,6 +16,11 @@ p {
   margin: 2rem auto;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .banner {
+    padding-top: 100px;
+  }
+}
 .banner .hospital {
   width: 95%;
   height: 50%;
@@ -26,12 +31,19 @@ p {
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .main-content .section1 {
   width: 45%;
   display: flex;
   flex-direction: column;
   margin: 0 3%;
+}
+@media (max-width: 500px) {
+  .main-content .section1 {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
 }
 .main-content .section1 .img-container {
   max-width: 450px;
@@ -45,6 +57,13 @@ p {
   display: flex;
   flex-direction: column-reverse;
   margin: 0 3%;
+}
+@media (max-width: 500px) {
+  .main-content .section2 {
+    width: 100%;
+    padding: 0 0.5rem;
+    flex-direction: column;
+  }
 }
 .main-content .section2 .img-container {
   max-width: 450px;
@@ -77,6 +96,19 @@ p {
   position: fixed;
   padding: 2.5rem 0 0 2.5rem;
   font-size: 5rem;
+}
+.fa-vial:hover {
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .fa-vial {
+    width: 100%;
+    height: auto;
+    background: white;
+    padding-bottom: 1.2rem;
+    margin-top: -2rem;
+    background-color: #adacb5;
+  }
 }
 .navigation {
   height: 100%;
