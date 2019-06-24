@@ -1,0 +1,37 @@
+
+.contact-mc {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  .title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .dev-block {
+    width: 33%;
+    background-color: #eae8ff;
+    text-align: center;
+    border-radius: 15px;
+    padding-top: 1.5rem;
+    transition-duration: 0.5s;
+    &:hover {
+        width: 48%;
+        background-color: #b0d7ff;
+    }
+    a {
+      font-size: 1.5rem;
+      font-family: "Trirong", serif;
+      text-decoration: none;
+      color: black;
+      transition-duration: 0.3s;
+      padding-bottom: 1rem;
+      &:hover {
+          color: teal;
+      }
+    }
+  }
+}
