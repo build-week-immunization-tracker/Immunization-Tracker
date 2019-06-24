@@ -8,5 +8,5 @@ creditButton.addEventListener('click', () => {
     creditButton.textContent = 'Close'
     } else {
     creditButton.textContent = 'Credit'
-    }
+    };
 })
