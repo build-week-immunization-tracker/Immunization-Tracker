@@ -1,10 +1,10 @@
-//Attempt to turn the credit portion of each footer into a component.
+// // Attempt to turn the credit portion of each footer into a component.
 
-// const creditButton = document.getElementById('selectPLEASE')
+//  const creditButton = document.getElementById('selectPLEASE')
 
-// const creditShow = document.querySelector('.credit')
+//  const creditShow = document.querySelector('.credit')
 
-// creditButton.addEventListener('click', () => {
+//  creditButton.addEventListener('click', () => {
 //     creditShow.classList.toggle('credit');
 //     if(creditButton.textContent == 'Credit'){
 //     creditButton.textContent = 'Close'
@@ -13,23 +13,23 @@
 //     };
 // })
 
-// //CLASSES ARE NOT HOISTED, MOVE TO TOP AFTER CONSTRUCTION
+//  //CLASSES ARE NOT HOISTED, MOVE TO TOP AFTER CONSTRUCTION
 
-// class CreditContent {
+//  class CreditContent {
 //     constructor(creditElement){
 //         this.credit = creditElement;
 
-//     }
+//      }
 
-//     show(){
+//      show(){
 //         this.credit.style.transition = '1s'
 //         this.credit.classList.toggle('.credit')
 //     }
 // }
 
-// class CreditButton {
+//  class CreditButton {
 //     constructor(buttonElement){
 //         this.button = buttonElement;
 //         this.
 //     }
-// }
+// } 
