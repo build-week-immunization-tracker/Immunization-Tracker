@@ -1,12 +1,20 @@
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
+
 .about-main-content {
     display: flex;
     flex-wrap: wrap;
     section {
         width: 100%;
+    }
+    @media ( max-width: 500px ){
+        width: 94%;
+        padding-top: 50px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        @media ( max-width ) {
+            padding: 0 1rem;
+        }
     }
 }
