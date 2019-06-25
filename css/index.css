@@ -31,7 +31,11 @@ p {
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
-  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .main-content {
+    flex-wrap: wrap;
+  }
 }
 .main-content .section1 {
   width: 45%;
