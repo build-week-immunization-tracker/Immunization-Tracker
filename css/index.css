@@ -149,11 +149,19 @@ p {
   margin-left: 50px;
 }
 .about-main-content {
+  padding-top: 3rem;
   display: flex;
   flex-wrap: wrap;
 }
 .about-main-content section {
   width: 100%;
+}
+.about-main-content .about-intro {
+  width: 100%;
+}
+.about-main-content .about-intro h1 {
+  width: 100%;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .about-main-content {
