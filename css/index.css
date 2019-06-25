@@ -144,17 +144,28 @@ p {
   font-size: 36px;
   margin-left: 50px;
 }
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
 .about-main-content {
   display: flex;
   flex-wrap: wrap;
 }
 .about-main-content section {
   width: 100%;
+}
+@media (max-width: 500px) {
+  .about-main-content {
+    width: 94%;
+    padding-top: 50px;
+  }
+}
+.about-main-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width) {
+  .about-main-content img {
+    padding: 0 1rem;
+  }
 }
 .contact-mc {
   max-width: 1000px;
