@@ -1,35 +1,28 @@
-// // Attempt to turn the credit portion of each footer into a component.
+class Button {
+    constructor(element){
+        this.button = element,
+        this.btnNumber = element.dataset.button,      
+        this.credits = document.querySelectorAll(".credit"),
+        this.btnCredit = document.querySelector(`.credit[data-button="${this.btnNumber}"]`),
+        this.button.addEventListener("click", () => {
+            this.showCredit();
+        });
+    }
+    showCredit(){
+        this.credits.forEach( credit => credit.classList.add("credit"));
+        if(this.btnNumber === "1"){
+            
+            this.credits.forEach( credit => credit.classList.toggle("credit"));
+        } else {
+            this.credits.forEach( credit => credit.classList.add("credit"));
+            this.btnCredit.classList.toggle("credit");
+            
+        }    
+    }
+}
 
-//  const creditButton = document.getElementById('selectPLEASE')
 
-//  const creditShow = document.querySelector('.credit')
 
-//  creditButton.addEventListener('click', () => {
-//     creditShow.classList.toggle('credit');
-//     if(creditButton.textContent == 'Credit'){
-//     creditButton.textContent = 'Close'
-//     } else {
-//     creditButton.textContent = 'Credit'
-//     };
-// })
+const creditButton = document.querySelectorAll('.credit-button');
 
-//  //CLASSES ARE NOT HOISTED, MOVE TO TOP AFTER CONSTRUCTION
-
-//  class CreditContent {
-//     constructor(creditElement){
-//         this.credit = creditElement;
-
-//      }
-
-//      show(){
-//         this.credit.style.transition = '1s'
-//         this.credit.classList.toggle('.credit')
-//     }
-// }
-
-//  class CreditButton {
-//     constructor(buttonElement){
-//         this.button = buttonElement;
-//         this.
-//     }
-// } 
+creditButton.forEach(button => new Button(button));
