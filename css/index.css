@@ -110,6 +110,11 @@ p {
   padding-left: 1rem;
   color: #4d85ec;
 }
+@media (max-width: 400px) {
+  .navbar-container .navbar-brand #brand-name {
+    display: none;
+  }
+}
 .navbar-container .navbar-brand .fa-vial {
   padding-left: 0.5rem;
   font-size: 4rem;
@@ -129,6 +134,7 @@ p {
   font-size: 2.3rem;
   padding-left: 2.3rem;
   transition-duration: 0.3s;
+  color: #4d85ec;
 }
 .navbar-container .nav a:hover {
   color: #90b1ee;
