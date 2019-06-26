@@ -1,4 +1,2 @@
 # Immunization-Tracker
-Marketing Page
-
-Branch push for Joshua Draper
+Marketing Page for immunization tracker application.
