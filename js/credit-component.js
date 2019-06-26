@@ -4,20 +4,26 @@ class Button {
         this.btnNumber = element.dataset.button,      
         this.credits = document.querySelectorAll(".credit"),
         this.btnCredit = document.querySelector(`.credit[data-button="${this.btnNumber}"]`),
-        this.button.addEventListener("click", () => {
+        this.button.addEventListener("mouseover", () => {
             this.showCredit();
         });
+        this.button.addEventListener("mouseout", () => {
+            this.hideCredit()
+        })
     }
     showCredit(){
-        this.credits.forEach( credit => credit.classList.add("credit"));
+        console.log('mousedown')
         if(this.btnNumber === "1"){
             
             this.credits.forEach( credit => credit.classList.toggle("credit"));
         } else {
-            this.credits.forEach( credit => credit.classList.add("credit"));
             this.btnCredit.classList.toggle("credit");
-            
+
         }    
+    }
+    hideCredit(){
+        this.credits.forEach( credit => credit.classList.add("credit"));
+        console.log('mouseup')
     }
 }
 
