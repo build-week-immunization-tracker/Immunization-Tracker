@@ -16,7 +16,7 @@ p {
   margin: 2rem auto;
   justify-content: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .banner {
     padding-top: 100px;
   }
@@ -105,18 +105,26 @@ p {
 .fa-vial:hover {
   cursor: pointer;
 }
+@media (max-width: 800px) {
+  .fa-vial {
+    width: 100%;
+    height: auto;
+    padding-bottom: 1.2rem;
+    margin-top: -2rem;
+    background-color: #adacb5;
+  }
+}
 @media (max-width: 500px) {
   .fa-vial {
     width: 100%;
     height: auto;
-    background: white;
     padding-bottom: 1.2rem;
     margin-top: -2rem;
     background-color: #adacb5;
   }
 }
 .navigation {
-  height: 100%;
+  height: 50%;
   width: 0;
   position: fixed;
   z-index: 1;
@@ -154,6 +162,11 @@ p {
   display: flex;
   flex-wrap: wrap;
 }
+@media (max-width: 800px) {
+  .about-main-content {
+    padding-top: 100px;
+  }
+}
 .about-main-content section {
   width: 100%;
 }
@@ -167,7 +180,7 @@ p {
 @media (max-width: 500px) {
   .about-main-content {
     width: 94%;
-    padding-top: 50px;
+    padding-top: 100px;
   }
 }
 .about-main-content img {
@@ -183,10 +196,16 @@ p {
 .contact-mc {
   max-width: 1000px;
   margin: 0 auto;
+  padding-top: 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   box-sizing: border-box;
+}
+@media (max-width: 800px) {
+  .contact-mc {
+    padding-top: 80px;
+  }
 }
 .contact-mc .title {
   width: 100%;
@@ -195,15 +214,27 @@ p {
 }
 .contact-mc .dev-block {
   width: 33%;
+  height: 250px;
   background-color: #eae8ff;
   text-align: center;
   border-radius: 15px;
   padding-top: 1.5rem;
   transition-duration: 0.5s;
 }
+@media (max-width: 500px) {
+  .contact-mc .dev-block {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+}
 .contact-mc .dev-block:hover {
   width: 48%;
   background-color: #b0d7ff;
+}
+@media (max-width: 500px) {
+  .contact-mc .dev-block:hover {
+    width: 100%;
+  }
 }
 .contact-mc .dev-block a {
   font-size: 1.5rem;
@@ -211,10 +242,29 @@ p {
   text-decoration: none;
   color: black;
   transition-duration: 0.3s;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 .contact-mc .dev-block a:hover {
   color: teal;
+}
+.contact-mc .contact {
+  width: 80%;
+}
+.contact-mc .contact h2 {
+  text-align: center;
+  text-decoration: underline;
+  padding-top: 2rem;
+}
+.contact-mc .contact label {
+  font-size: 2rem;
+}
+.contact-mc .contact input {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.contact-mc .contact textarea {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 .stories-main-content {
   display: flex;
