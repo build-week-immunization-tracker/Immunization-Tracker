@@ -191,6 +191,7 @@ p {
   }
 }
 .mobile-links a {
+  color: #4d85ec;
   padding-bottom: 1.5rem;
 }
 .mobile-links a:hover {
