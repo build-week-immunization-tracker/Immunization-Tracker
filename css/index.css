@@ -18,7 +18,7 @@ p {
 }
 @media (max-width: 800px) {
   .banner {
-    padding-top: 100px;
+    padding-top: 8rem;
   }
 }
 .banner .hospital {
@@ -97,65 +97,105 @@ p {
 .footer-container .credit {
   display: none;
 }
-.fa-vial {
-  position: fixed;
-  padding: 2.5rem 0 0 2.5rem;
-  font-size: 5rem;
+.navbar-container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: flex-end;
 }
-.fa-vial:hover {
+.navbar-container .navbar-brand #brand-name {
+  font-size: 2.7rem;
+  padding-left: 1rem;
+  color: #4d85ec;
+}
+@media (max-width: 400px) {
+  .navbar-container .navbar-brand #brand-name {
+    display: none;
+  }
+}
+.navbar-container .navbar-brand .fa-vial {
+  padding-left: 0.5rem;
+  font-size: 4rem;
+  color: #4d85ec;
+}
+.navbar-container .nav {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+@media (max-width: 800px) {
+  .navbar-container .nav {
+    display: none;
+  }
+}
+.navbar-container .nav a {
+  font-size: 2.3rem;
+  padding-left: 2.3rem;
+  transition-duration: 0.3s;
+  color: #4d85ec;
+}
+.navbar-container .nav a:hover {
+  color: #90b1ee;
+}
+.navbar-container .dropdown-nav {
+  width: 100%;
+  justify-content: flex-end;
+  align-self: center;
+  display: none;
+  padding-right: 1.2rem;
+}
+.navbar-container .dropdown-nav:hover {
   cursor: pointer;
 }
 @media (max-width: 800px) {
-  .fa-vial {
-    width: 100%;
-    height: auto;
-    padding-bottom: 1.2rem;
-    margin-top: -2rem;
-    background-color: #adacb5;
+  .navbar-container .dropdown-nav {
+    display: flex;
+  }
+}
+.navbar-container .dropdown-nav .border {
+  width: 5rem;
+  background-color: #4d85ec;
+  padding: 0.4rem 0.6rem;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  transition-duration: 0.3s;
+}
+.navbar-container .dropdown-nav .border:hover {
+  background-color: #8eb1f1;
+}
+.navbar-container .dropdown-nav .fa-bars {
+  font-size: 3rem;
+}
+.mobile-links {
+  display: none;
+  width: 45%;
+  top: 1.9rem;
+  right: 0;
+  margin-top: 5.2rem;
+  position: fixed;
+  font-size: 2rem;
+  z-index: 2;
+  text-align: center;
+}
+@media (min-width: 800px) {
+  .mobile-links {
+    display: none;
   }
 }
 @media (max-width: 500px) {
-  .fa-vial {
+  .mobile-links {
     width: 100%;
-    height: auto;
-    padding-bottom: 1.2rem;
-    margin-top: -2rem;
-    background-color: #adacb5;
   }
 }
-.navigation {
-  height: 50%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+.mobile-links a {
+  color: #4d85ec;
+  padding-bottom: 1.5rem;
 }
-.navigation a {
-  padding: 1.5rem;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-.navigation a:nth-child(1n+2) {
-  text-align: center;
-  border-bottom: 1px solid #f1f1f1;
-}
-.navigation a:hover {
-  color: #f1f1f1;
-}
-.navigation .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+.mobile-links a:hover {
+  background-color: #929292;
 }
 .about-main-content {
   padding-top: 3rem;
@@ -213,7 +253,7 @@ p {
   margin-bottom: 2rem;
 }
 .contact-mc .dev-block {
-  width: 33%;
+  width: 40%;
   height: 250px;
   background-color: #eae8ff;
   text-align: center;
@@ -227,15 +267,6 @@ p {
     margin-bottom: 2rem;
   }
 }
-.contact-mc .dev-block:hover {
-  width: 48%;
-  background-color: #b0d7ff;
-}
-@media (max-width: 500px) {
-  .contact-mc .dev-block:hover {
-    width: 100%;
-  }
-}
 .contact-mc .dev-block a {
   font-size: 1.5rem;
   font-family: "Trirong", serif;
@@ -246,6 +277,11 @@ p {
 }
 .contact-mc .dev-block a:hover {
   color: teal;
+}
+.contact-mc .dev-block .fa-github,
+.contact-mc .dev-block .fa-linkedin {
+  padding: 1rem;
+  font-size: 5rem;
 }
 .contact-mc .contact {
   width: 80%;
@@ -277,28 +313,23 @@ p {
   padding: 2rem 0;
   width: 100%;
 }
-@media (max-width: 500px) {
-  .stories-main-content .title {
-    padding-top: 100px;
-  }
-}
 .stories-main-content .title h1 {
   font-weight: bold;
 }
 #user-reviews {
-  margin: 0;
+  margin: 10rem auto 0 auto;
   padding: 2rem;
-  width: 100%;
+  width: 90%;
   text-align: center;
   background-color: #848485a1;
-  color: white;
+  color: #1148af;
 }
 .carousel {
   width: 100%;
 }
 .review-panel {
   background-image: url("https://www.hdwallpapers.in/walls/windows_xp_bliss-wide.jpg");
-  max-width: 100%;
+  max-width: 90%;
   height: 330px;
   margin: 0 auto;
   text-align: center;
@@ -317,12 +348,18 @@ p {
   flex-wrap: wrap;
   margin-top: 2rem;
   padding: 1rem;
+  justify-content: space-around;
 }
 .message .company-message {
-  width: 48%;
+  width: 45%;
+  padding: 0.8rem;
+  border: 1px solid grey;
+  border-radius: 7px;
+  box-shadow: 6px 6px 6px grey;
 }
 @media (max-width: 500px) {
   .message .company-message {
+    margin-top: 2rem;
     width: 96%;
   }
 }
