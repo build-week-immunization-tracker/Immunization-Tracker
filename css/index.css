@@ -317,16 +317,11 @@ p {
   padding: 2rem 0;
   width: 100%;
 }
-@media (max-width: 500px) {
-  .stories-main-content .title {
-    padding-top: 100px;
-  }
-}
 .stories-main-content .title h1 {
   font-weight: bold;
 }
 #user-reviews {
-  margin: 0 auto;
+  margin: 10rem auto 0 auto;
   padding: 2rem;
   width: 90%;
   text-align: center;
