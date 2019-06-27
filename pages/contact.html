@@ -7,27 +7,49 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Assistant&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Mate&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Trirong&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/de098081f4.js"></script>
     <script src="../js/menu.js" async></script>
     <script src="../js/homepage.js" async></script>
-    <title>Document</title>
+    <title>Immunization Tracker</title>
 </head>
 
 <body>
-    <div id="navMenu" class="navigation">
-        <a href="" class="closebtn"><i class="fa fa-times" aria-hidden="true"></i>
-        </a>
-        <a href="../index.html">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./contact.html">Contact</a>
-        <a href="./stories.html">Stories</a>
+    <nav class="navbar fixed-top navbar-light bg-dark">
+        <div class="navbar-container">
+            <a class="navbar-brand" href="../index.html">
+                <i class="fas fa-vial"></i>
+                <span id="brand-name">Immunization Tracker</span>
+            </a>
+            <nav class="nav">
+                <a class="nav-link" href="../index.html">Home</a>
+                <a class="nav-link" href="./about.html">About</a>
+                <a class="nav-link" href="./contact.html">Contact</a>
+                <a class="nav-link" href="./stories.html">Stories</a>
+            </nav>
+            <div class="dropdown-nav">
+                <div class="border">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- beginning code for Homepage content -->
+    <div class="mobile-links">
+        <nav class="bg-dark">
+            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link" href="./about.html">About</a>
+            <a class="nav-link" href="./contact.html">Contact</a>
+            <a class="nav-link" href="./stories.html">Stories</a>
+        </nav>
     </div>
-    <div class="openbtn"><i class="fas fa-vial"></i></div>
 
     <section class="main-content contact-mc">
         <div class="title">
@@ -39,7 +61,8 @@
             <address>
                 <a href="mailto:rthom2171@icloud.com">rthom2171@icloud.com</a>
             </address>
-            <a href="https://github.com/rthom2178">Github</a>
+            <a href="https://github.com/rthom2178"><i class="fa fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>   
         </div>
         <div class="dev-block">
             <h2>Joshua Draper</h2>
@@ -47,7 +70,8 @@
             <address>
                 <a href="mailto:joshua.roy.draper@gmail.com">joshua.roy.draper@gmail.com</a>
             </address>
-            <a href="https://github.com/Classic-username">Github</a>
+            <a href="https://github.com/Classic-username"><i class="fa fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
         </div>
 
         <div class="contact">
@@ -57,9 +81,10 @@
                     <label for="exampleFormControlInput1">Email address</label>
                     <input type="email" class="form-control" id="exampleFormControlInput1"
                         placeholder="name@example.com">
-                    
+
                     <label for="exampleFormControlTextarea1">Message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Leave us some feedback"></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"
+                        placeholder="Leave us some feedback"></textarea>
                     <input class="btn btn-primary" type="submit" value="Submit">
                 </div>
             </form>
@@ -86,9 +111,6 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
