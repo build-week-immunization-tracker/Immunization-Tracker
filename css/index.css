@@ -17,9 +17,10 @@ body {
 .banner {
   display: flex;
   max-width: 1000px;
-  margin: 2rem auto;
+  margin: 6rem auto 2rem auto;
   justify-content: center;
   background-color: #eae8ff;
+  padding: 3rem 0px;
 }
 @media (max-width: 800px) {
   .banner {
@@ -34,6 +35,8 @@ body {
 .main-content {
   max-width: 1000px;
   display: flex;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
   margin: 0 auto;
   justify-content: space-between;
   background-color: #eae8ff;
@@ -183,7 +186,8 @@ body {
   background-color: #929292;
 }
 .about-main-content {
-  padding-top: 3rem;
+  margin-top: 4rem;
+  padding: 3rem;
   display: flex;
   flex-wrap: wrap;
 }

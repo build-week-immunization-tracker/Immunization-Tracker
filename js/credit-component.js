@@ -9,6 +9,9 @@ class Button {
             this.showCredit();
             // this.closeButtOn.classList.toggle('credit')
         })
+        this.button.addEventListener('dblclick', () => {
+            this.hideCredit()
+        })
         // this.closeButtOn.addEventListener('click', () => {
         //     console.log("close button pressed")
         // })
@@ -22,6 +25,9 @@ class Button {
 
         }        
         
+    }
+    hideCredit(){
+        this.credits.forEach(credit => credit.classList.add('credit'))
     }
 
 }
