@@ -13,7 +13,7 @@ class Button {
     }
     showCredit(){
         console.log('mousedown')
-        if(this.btnNumber === "1"){
+        if(this.btnNumber === "1"){ 
             
             this.credits.forEach( credit => credit.classList.toggle("credit"));
         } else {
