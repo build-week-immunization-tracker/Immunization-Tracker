@@ -1,4 +1,5 @@
 body {
+
   background-image: url("https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
   background-attachment: fixed;
 }
@@ -14,6 +15,24 @@ body {
   .hospital {
     width: 100%;
     height: auto;
+
+  .banner{
+      display: flex;
+      max-width: 1000px;
+      margin: 6rem auto 2rem auto;
+      justify-content: center;
+      background-color: #eae8ff;
+      padding: 3rem 0px;
+      @media ( max-width: 800px ){
+          padding-top: 8rem;
+      }
+      // @media (max-width: 500px) {
+      //     padding-top: 100px;
+      // }
+      .hospital{
+      width: 95%;
+      height: 50%;
+
     border-radius: 10px;
     margin-bottom: 1rem;
   }
@@ -43,6 +62,7 @@ body {
       width: 100%;
       padding: 0 0.5rem;
       flex-direction: column;
+
     }
     .img-container {
     //   max-width: 450px;
@@ -55,26 +75,3 @@ body {
   }
 }
 
-.footer-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background: #d8d5db;
-  padding-top: 2rem;
-  transition-duration: 0.5s;
-  div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 1.5rem;
-  }
-
-  .credit-button {
-    max-width: 55px;
-    align-self: center;
-  }
-
-  .credit {
-    display: none;
-  }
-}
