@@ -1,3 +1,7 @@
+// .background-blur {
+//   filter: blur(2px) grayscale(90%);
+// }
+
 .stories-main-content {
   display: flex;
   max-width: 1060px;
@@ -25,6 +29,16 @@
   box-shadow: 6px 6px 6px grey;
 }
 
+.review-btn {
+  display: flex;
+  margin-top: 2rem;
+  width: 100%;
+  justify-content: center;
+  button {
+    font-size: 2rem;
+  }
+}
+
 .review-panel {
   background-image: url("https://www.hdwallpapers.in/walls/windows_xp_bliss-wide.jpg");
   max-width: 100%;
@@ -49,6 +63,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 2rem;
+  margin-bottom: 5rem;
   padding: 1rem;
   justify-content: space-around;
   .company-message {
@@ -64,6 +79,24 @@
     h2 {
       text-align: center;
       text-decoration: underline;
+    }
+  }
+}
+
+.modal {
+  display: none;
+  margin-top: 10%;
+  .btn {
+    font-size: 1.7rem;
+  }
+  .modal-body {
+    font-size: 2rem;
+    line-height: 2rem;
+    .input-group-text, input {
+      font-size: 2rem;
+    }
+    .form-control {
+      font-size: 2rem;
     }
   }
 }
