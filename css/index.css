@@ -202,6 +202,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-evenly;
   box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
 }
 @media (max-width: 800px) {
   .contact-mc {
@@ -211,7 +212,17 @@ body {
 .contact-mc .title {
   width: 100%;
   text-align: center;
+  margin-top: 6rem;
   margin-bottom: 2rem;
+}
+.contact-mc .title h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+@media (max-width: 800px) {
+  .contact-mc .title {
+    margin-top: 4rem;
+  }
 }
 .contact-mc .dev-block {
   width: 40%;
@@ -252,7 +263,8 @@ body {
 }
 .contact-mc .contact h2 {
   text-align: center;
-  text-decoration: underline;
+  font-weight: bolder;
+  font-size: 3rem;
   padding-top: 2rem;
 }
 .contact-mc .contact label {
@@ -266,12 +278,16 @@ body {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
+.contact-mc .contact form {
+  margin-bottom: 3rem;
+}
 .stories-main-content {
   display: flex;
   max-width: 1060px;
   margin: 0 auto;
   flex-wrap: wrap;
   padding: 0 1rem;
+  background-color: rgba(0, 0, 0, 0);
 }
 #user-reviews {
   margin: 10rem auto 0 auto;
@@ -321,7 +337,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-top: 2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 4.5rem;
   padding: 1rem;
   justify-content: space-around;
 }
@@ -331,6 +347,7 @@ body {
   border: 1px solid grey;
   border-radius: 7px;
   box-shadow: 6px 6px 6px grey;
+  background-color: #eae8ff;
 }
 @media (max-width: 500px) {
   .message .company-message {
