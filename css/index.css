@@ -135,7 +135,7 @@ body {
 .mobile-links {
   display: none;
   width: 45%;
-  top: 1.8rem;
+  top: 1rem;
   right: 0;
   margin-top: 5.2rem;
   position: fixed;
@@ -157,6 +157,9 @@ body {
   color: #4d85ec;
   padding-bottom: 1.5rem;
 }
+.mobile-links a:first-child {
+  padding-top: 1rem;
+}
 .mobile-links a:hover {
   background-color: #929292;
 }
@@ -167,9 +170,6 @@ body {
   flex-wrap: wrap;
 }
 @media (max-width: 800px) {
-  .about-main-content {
-    padding-top: 100px;
-  }
 }
 .about-main-content section {
   width: 100%;
@@ -184,7 +184,6 @@ body {
 @media (max-width: 500px) {
   .about-main-content {
     width: 94%;
-    padding-top: 100px;
   }
 }
 .about-main-content img {
