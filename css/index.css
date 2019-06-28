@@ -218,7 +218,7 @@ body {
 .contact-mc .dev-block {
   width: 40%;
   height: 250px;
-  background-color: #eae8ff;
+  background-color: #bbb5ff;
   text-align: center;
   border-radius: 15px;
   padding-top: 1.5rem;
@@ -229,6 +229,9 @@ body {
     width: 80%;
     margin-bottom: 2rem;
   }
+}
+.contact-mc .dev-block h2 {
+  padding-top: 2rem;
 }
 .contact-mc .dev-block a {
   font-size: 1.5rem;
