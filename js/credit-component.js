@@ -6,17 +6,12 @@ class Button {
       (this.btnCredit = document.querySelector(
         `.credit[data-button="${this.btnNumber}"]`
       )),
-      // this.closeButtOn = document.querySelector('fa-window-close,.credit'),
       this.button.addEventListener("click", () => {
         this.showCredit();
-        // this.closeButtOn.classList.toggle('credit')
+      }),
+      this.button.addEventListener("dblclick", () => {
+        this.hideCredit();
       });
-    this.button.addEventListener("dblclick", () => {
-      this.hideCredit();
-    });
-    // this.closeButtOn.addEventListener('click', () => {
-    //     console.log("close button pressed")
-    // })
   }
   showCredit() {
     this.credits.forEach(credit => credit.classList.add("credit"));
