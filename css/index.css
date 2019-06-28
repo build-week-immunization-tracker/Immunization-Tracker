@@ -1,49 +1,25 @@
 h1 {
   font-size: 3rem;
-  font-family: 'Assistant', sans-serif;
+  font-family: "Assistant", sans-serif;
 }
 h2 {
   font-size: 2rem;
-  font-family: 'Mate', serif;
+  font-family: "Mate", serif;
 }
 p {
   font-size: 1.5rem;
-  font-family: 'Trirong', serif;
+  font-family: "Trirong", serif;
 }
 body {
   background-image: url("https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
   background-attachment: fixed;
 }
-
-.banner {
-  display: flex;
-  max-width: 1000px;
-  margin: 6rem auto 2rem auto;
-  justify-content: center;
-  background-color: #eae8ff;
-  padding: 3rem 0px;
-}
-@media (max-width: 800px) {
-  .banner {
-    padding-top: 8rem;
-  }
-}
-.banner .hospital {
-  width: 95%;
-  height: 50%;
-  border-radius: 10px;
-}
 .main-content {
   max-width: 1080px;
   display: flex;
-
   flex-wrap: wrap;
   justify-content: space-around;
-
-  padding-top: 3rem;
-  padding-bottom: 1rem;
-
-  margin: 0 auto;
+  margin: 6rem auto 0 auto;
   padding: 0 1rem 1rem 1rem;
   background-color: #eae8ff;
 }
@@ -159,12 +135,12 @@ body {
 .mobile-links {
   display: none;
   width: 45%;
-  top: 1.8rem;
+  top: 1rem;
   right: 0;
   margin-top: 5.2rem;
   position: fixed;
   font-size: 2rem;
-  z-index: 2;
+  z-index: 11;
   text-align: center;
 }
 @media (min-width: 800px) {
@@ -181,6 +157,9 @@ body {
   color: #4d85ec;
   padding-bottom: 1.5rem;
 }
+.mobile-links a:first-child {
+  padding-top: 1rem;
+}
 .mobile-links a:hover {
   background-color: #929292;
 }
@@ -189,11 +168,6 @@ body {
   padding: 3rem;
   display: flex;
   flex-wrap: wrap;
-}
-@media (max-width: 800px) {
-  .about-main-content {
-    padding-top: 100px;
-  }
 }
 .about-main-content section {
   width: 100%;
@@ -208,11 +182,10 @@ body {
 @media (max-width: 500px) {
   .about-main-content {
     width: 94%;
-    padding-top: 100px;
   }
 }
 .about-main-content img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 10px;
 }
@@ -243,7 +216,7 @@ body {
 .contact-mc .dev-block {
   width: 40%;
   height: 250px;
-  background-color: #eae8ff;
+  background-color: #bbb5ff;
   text-align: center;
   border-radius: 15px;
   padding-top: 1.5rem;
@@ -254,6 +227,9 @@ body {
     width: 80%;
     margin-bottom: 2rem;
   }
+}
+.contact-mc .dev-block h2 {
+  padding-top: 2rem;
 }
 .contact-mc .dev-block a {
   font-size: 1.5rem;
@@ -297,13 +273,6 @@ body {
   flex-wrap: wrap;
   padding: 0 1rem;
 }
-.stories-main-content .title {
-  padding: 2rem 0;
-  width: 100%;
-}
-.stories-main-content .title h1 {
-  font-weight: bold;
-}
 #user-reviews {
   margin: 10rem auto 0 auto;
   padding: 2rem;
@@ -311,16 +280,24 @@ body {
   text-align: center;
   background-color: #848485a1;
   color: #1148af;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 6px 6px 6px grey;
 }
 .carousel {
-  width: 100%;
+  width: 90%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 6px 6px 6px grey;
 }
 .review-panel {
   background-image: url("https://www.hdwallpapers.in/walls/windows_xp_bliss-wide.jpg");
-  max-width: 90%;
+  max-width: 100%;
   height: 330px;
   margin: 0 auto;
   text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .review-panel .review-text {
   font-weight: bold;
@@ -371,9 +348,20 @@ body {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .credit-for-images .button-bar {
+    margin: 0 1rem;
+    flex-direction: column;
+  }
+}
 .credit-for-images .button-bar .credit-button {
   font-size: 2rem;
   color: #4d85ec;
+}
+@media (max-width: 500px) {
+  .credit-for-images .button-bar .credit-button {
+    margin: 1rem;
+  }
 }
 .credit-for-images .credit {
   display: none;
