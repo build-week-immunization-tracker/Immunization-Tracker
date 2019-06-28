@@ -347,9 +347,20 @@ body {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .credit-for-images .button-bar {
+    margin: 0 1rem;
+    flex-direction: column;
+  }
+}
 .credit-for-images .button-bar .credit-button {
   font-size: 2rem;
   color: #4d85ec;
+}
+@media (max-width: 500px) {
+  .credit-for-images .button-bar .credit-button {
+    margin: 1rem;
+  }
 }
 .credit-for-images .credit {
   display: none;
