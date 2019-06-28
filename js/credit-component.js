@@ -1,35 +1,39 @@
-// // Attempt to turn the credit portion of each footer into a component.
+class Button {
+    constructor(element){
+        this.button = element,
+        this.btnNumber = element.dataset.button,      
+        this.credits = document.querySelectorAll(".credit"),
+        this.btnCredit = document.querySelector(`.credit[data-button="${this.btnNumber}"]`),
+        // this.closeButtOn = document.querySelector('fa-window-close,.credit'),
+        this.button.addEventListener("click", () => {
+            this.showCredit();
+            // this.closeButtOn.classList.toggle('credit')
+        })
+        this.button.addEventListener('dblclick', () => {
+            this.hideCredit()
+        })
+        // this.closeButtOn.addEventListener('click', () => {
+        //     console.log("close button pressed")
+        // })
+    }
+    showCredit(){
+        this.credits.forEach(credit => credit.classList.add('credit'))
+        if(this.btnNumber === "1"){ 
+            this.credits.forEach( credit => credit.classList.toggle("credit"));           
+        } else {
+            this.btnCredit.classList.toggle("credit");
 
-//  const creditButton = document.getElementById('selectPLEASE')
+        }        
+        
+    }
+    hideCredit(){
+        this.credits.forEach(credit => credit.classList.add('credit'))
+    }
 
-//  const creditShow = document.querySelector('.credit')
+}
 
-//  creditButton.addEventListener('click', () => {
-//     creditShow.classList.toggle('credit');
-//     if(creditButton.textContent == 'Credit'){
-//     creditButton.textContent = 'Close'
-//     } else {
-//     creditButton.textContent = 'Credit'
-//     };
-// })
 
-//  //CLASSES ARE NOT HOISTED, MOVE TO TOP AFTER CONSTRUCTION
 
-//  class CreditContent {
-//     constructor(creditElement){
-//         this.credit = creditElement;
+const creditButton = document.querySelectorAll('.credit-button');
 
-//      }
-
-//      show(){
-//         this.credit.style.transition = '1s'
-//         this.credit.classList.toggle('.credit')
-//     }
-// }
-
-//  class CreditButton {
-//     constructor(buttonElement){
-//         this.button = buttonElement;
-//         this.
-//     }
-// } 
+creditButton.forEach(button => new Button(button));

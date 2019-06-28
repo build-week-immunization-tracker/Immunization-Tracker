@@ -10,11 +10,18 @@ p {
   font-size: 1.5rem;
   font-family: 'Trirong', serif;
 }
+body {
+  background-image: url("https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  background-attachment: fixed;
+}
+
 .banner {
   display: flex;
   max-width: 1000px;
-  margin: 2rem auto;
+  margin: 6rem auto 2rem auto;
   justify-content: center;
+  background-color: #eae8ff;
+  padding: 3rem 0px;
 }
 @media (max-width: 800px) {
   .banner {
@@ -27,21 +34,29 @@ p {
   border-radius: 10px;
 }
 .main-content {
-  max-width: 1000px;
+  max-width: 1080px;
   display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+
   margin: 0 auto;
-  justify-content: space-between;
+  padding: 0 1rem 1rem 1rem;
+  background-color: #eae8ff;
 }
-@media (max-width: 500px) {
-  .main-content {
-    flex-wrap: wrap;
-  }
+.main-content .hospital {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
 .main-content .section1 {
-  width: 45%;
+  width: 48%;
   display: flex;
   flex-direction: column;
-  margin: 0 3%;
 }
 @media (max-width: 500px) {
   .main-content .section1 {
@@ -49,18 +64,14 @@ p {
     padding: 0 0.5rem;
   }
 }
-.main-content .section1 .img-container {
-  max-width: 450px;
-}
 .main-content .section1 .img-container img {
   width: 100%;
   border-radius: 10px;
 }
 .main-content .section2 {
-  width: 45%;
+  width: 48%;
   display: flex;
   flex-direction: column-reverse;
-  margin: 0 3%;
 }
 @media (max-width: 500px) {
   .main-content .section2 {
@@ -69,36 +80,12 @@ p {
     flex-direction: column;
   }
 }
-.main-content .section2 .img-container {
-  max-width: 450px;
-}
 .main-content .section2 .img-container img {
   width: 100%;
   border-radius: 10px;
 }
-.footer-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background: #d8d5db;
-  padding-top: 2rem;
-  transition-duration: 0.5s;
-}
-.footer-container div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 1.5rem;
-}
-.footer-container .credit-button {
-  max-width: 55px;
-  align-self: center;
-}
-.footer-container .credit {
-  display: none;
-}
 .navbar-container {
-  max-width: 1000px;
+  max-width: 1080px;
   width: 100%;
   margin: 0 auto;
   padding: 0.5rem 0;
@@ -198,7 +185,8 @@ p {
   background-color: #929292;
 }
 .about-main-content {
-  padding-top: 3rem;
+  margin-top: 4rem;
+  padding: 3rem;
   display: flex;
   flex-wrap: wrap;
 }
@@ -366,6 +354,48 @@ p {
 .message .company-message h2 {
   text-align: center;
   text-decoration: underline;
+}
+.credit-for-images {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #343a40;
+  padding-top: 2rem;
+  transition-duration: 0.5s;
+  margin-top: 2rem;
+}
+.credit-for-images .button-bar {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.credit-for-images .button-bar .credit-button {
+  font-size: 2rem;
+  color: #4d85ec;
+}
+.credit-for-images .credit {
+  display: none;
+}
+.credit-for-images section {
+  width: 30%;
+  text-align: center;
+  padding: 1.5rem;
+}
+.credit-for-images p {
+  color: white;
+}
+.credit-for-images a {
+  font-size: 2rem;
+  transition-duration: 0.3s;
+}
+.credit-for-images a:hover {
+  color: #8eb1f1;
+}
+.credit-for-images .fa-window-close {
+  font-size: 4rem;
+  color: white;
 }
 html,
 body {
